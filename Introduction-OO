@@ -1,0 +1,30 @@
+""" Classe une comportamento e estado """
+
+class Conta :
+    def __init__ (self, nome, numero, saldo, limite) :
+
+        # Atributos // Estado // variáveis
+        """ """
+        self.nome = nome
+        self.numero = numero
+        self.saldo = saldo
+        self.limite = limite
+
+    # Métodos // Funções // Comportamentos 
+    """ Funcionalidades de um objeto | Funções dentro de uma classe """
+    
+    def deposita (self, valor) :
+        self.saldo += valor
+
+    def saca (self, valor) :
+        if (valor > self.saldo) :
+            return False
+        else :
+            self.saldo -= valor
+            return True 
+
+    def extrato (self) :
+        print("Conta : {}\nExtrato : {}".format(self.numero, self.saldo))
+        
+# __new__ : Pesquisar ***
+# __init__ : Responsável por inicializar o objeto
