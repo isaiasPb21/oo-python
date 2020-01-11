@@ -33,3 +33,5 @@ class Conta :
 
 conta = Conta("Nome", 12345, 123.45, 12345)
 # ^^ Variável referência | Referência de um objeto tipo Conta 
+""" O valor armazenado na variavel conta, é uma referência de onde o objeto se
+encontra na memória principal """
