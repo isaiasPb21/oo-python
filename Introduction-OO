@@ -28,3 +28,8 @@ class Conta :
         
 # __new__ : Pesquisar ***
 # __init__ : Responsável por inicializar o objeto
+
+# "Criando" um objeto do tipo da classe Conta
+
+conta = Conta("Nome", 12345, 123.45, 12345)
+# ^^ Variável referência | Referência de um objeto tipo Conta 
